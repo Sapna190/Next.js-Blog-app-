@@ -1,3 +1,7 @@
 .container {
     
 }
+
+.social{
+    display: flex;
+}
