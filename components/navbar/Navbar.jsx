@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className={styles.links}>
             <ThemeToggle/>
             <Link href="/">Homepage</Link>
-            <Link href="/">Contact</Link>
+            <Link href="/">Contacts</Link>
             <Link href="/">About</Link>
             <AuthLinks/>
         </div>
