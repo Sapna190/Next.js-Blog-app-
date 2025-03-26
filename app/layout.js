@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { ThemeContextProvider } from "@/context/themeContext";
+import ThemeProvider from "@/providers/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeContextProvider>
+          <ThemeProvider>
         <div className="container">
           <div className="wrapper">
             <Navbar/>
@@ -31,6 +33,7 @@ export default function RootLayout({ children }) {
             <Footer/>
             </div>
           </div>
+          </ThemeProvider>
           </ThemeContextProvider>
       </body>
     </html>
